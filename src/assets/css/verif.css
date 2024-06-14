@@ -1,0 +1,456 @@
+/* src/assets/css/styles.css */
+/* @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'); */
+
+/* body {
+  font-family: 'Karla', sans-serif;
+} */
+
+
+.login-page {
+    font-family: "Karla", sans-serif;
+    background-color: #D2D5C5;
+    min-height: 100vh;
+  }
+  
+  .login-page main {
+    border: 1px solid;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .login-page .checkbox-wrapper-1 *,
+  .login-page .checkbox-wrapper-1 ::after,
+  .login-page .checkbox-wrapper-1 ::before {
+    box-sizing: border-box;
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted {
+    margin: 0;
+    width: 0;
+    height: 0;
+    display: inline;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted + label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 7%;
+    height: 1.15em;
+    width: 1.15em;
+    margin-right: 0.6em;
+    color: rgba(0, 0, 0, 0.275);
+    border: solid 0.06em;
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;
+    border-radius: 0.2em;
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="white" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>') no-repeat center, white;
+    background-size: 0;
+    will-change: color, border, background, background-size, box-shadow;
+    transform: translate3d(0, 0, 0);
+    transition: color 0.1s, border 0.1s, background 0.15s, box-shadow 0.1s;
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:enabled:active + label:before,
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:enabled + label:active:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset;
+    background-color: #f0f0f0 ;
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:checked + label:before {
+    background-color: #6D805D;
+    background-size: 0.75em;
+    color: rgba(0, 0, 0, 0.075);
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled:active + label:before,
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled + label:active:before {
+    background-color: #6D805D;
+    color: rgba(0, 0, 0, 0.275);
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:focus + label:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:focus:active + label:before,
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:focus + label:active:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted:disabled + label:before {
+    opacity: 0.5;
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted.dark + label:before {
+    color: rgba(255, 255, 255, 0.275);
+    background-color: #222;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="rgba(34, 34, 34, 0.999)" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>');
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled:active + label:before,
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled + label:active:before {
+    background-color: #444;
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(255, 255, 255, 0.1) inset;
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked + label:before {
+    background-color: #a97035;
+    color: rgba(255, 255, 255, 0.075);
+  }
+  
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled:active + label:before,
+  .login-page .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled + label:active:before {
+    background-color: #c68035;
+    color: rgba(0, 0, 0, 0.275);
+  }
+  
+  .login-page .text {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  
+  .login-page .text-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .login-page .text-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .login-page .text-left {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .login-page .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .login-page .brand-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-page .brand-wrapper .logo {
+    height: 40px;
+    margin-top: 200px;
+  }
+
+.verification-text {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 2px;
+    margin-left: 20px;
+}
+
+.code-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.code-input {
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.code-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+  .forgot-password-text-verif {
+    font-size: 18px;
+    color: #fff; /* Mengubah warna teks menjadi putih */
+    font-weight: bold; /* Menebalkan teks */
+    cursor: pointer;
+    transition: color 0.3s;
+    position:relative;
+    left: 125px; /* Menggeser teks ke kanan sedikit */
+}
+
+.forgot-password-text-newpw {
+    font-size: 18px;
+    color: #fff; /* Mengubah warna teks menjadi putih */
+    font-weight: bold; /* Menebalkan teks */
+    cursor: pointer;
+    transition: color 0.3s;
+    position:relative;
+    left: 110px; /* Menggeser teks ke kanan sedikit */
+}
+
+.forgot-password-text:hover {
+    color: #e0e0e0; /* Mengubah warna teks saat di-hover */
+}
+
+  .login-page .login-section-wrapper-pw {
+    display: -webkit-box;
+    padding: 10px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    background-color: #D2D5C5;
+    margin-top: 30px;
+    margin-right: -1500px;
+    margin-left: 210px;
+  
+  }
+  
+  @media (max-width: 991px) {
+    .login-page .login-section-wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .login-page .login-section-wrapper {
+      min-height: 100vh;
+    }
+  }
+  
+  .login-page .login-wrapper {
+    width: 350px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #99A285;
+    max-width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+  @media (max-width: 575px) {
+    .login-page .login-wrapper {
+      width: 100%;
+    }
+  }
+  
+  .login-page .login-wrapper label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b0adad;
+  }
+  
+  .login-page .login-wrapper .form-control {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 9px 5px;
+    min-height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .login-page .login-wrapper .form-control::-webkit-input-placeholder {
+    color: #b0adad;
+  }
+  
+  .login-page .login-wrapper .form-control::-moz-placeholder {
+    color: #b0adad;
+  }
+  
+  .login-page .login-wrapper .form-control:-ms-input-placeholder {
+    color: #b0adad;
+  }
+  
+  .login-page .login-wrapper .form-control::-ms-input-placeholder {
+    color: #b0adad;
+  }
+  
+  .login-page .login-wrapper .form-control::placeholder {
+    color: #b0adad;
+  }
+  
+  .login-page .login-btn {
+    min-height: 40%;
+    width: 90%;
+    background-color: #6D805D;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .login-page .login-wrapper .login-btn:hover {
+    border: 1px solid #6D805D;
+    background-color: #fff;
+    color: #6D805D;
+  }
+  
+  .login-page .login-wrapper .forgot-password-link {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: underline;
+    display: inline-flex;
+    margin-top: 14px;
+  }
+  
+  @media (max-width: 575px) {
+    .login-page .login-wrapper a.forgot-password-link {
+      margin-bottom: 16px;
+    }
+  }
+  
+  .login-page .login-wrapper-footer-text {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: -28px;
+  }
+  
+  .login-page .login-title {
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .login-page .login-img {
+    width: 500px;;
+    min-height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left;
+    object-position: left;
+    margin-top: -80px;
+    margin-left: -20px;
+  }
+  
+  .login-page .sign-btn {
+    min-height: 25%;
+    width: 28%;
+    background-color: #6D805D;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    min-height: 25%;
+    width: 28%;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 25px; /* Ensuring vertical alignment of text */
+    text-decoration: none; /* Removing underline from links */
+  }
+  
+  .login-page .login-wrapper .sign-btn:hover {
+    border: 1px solid #6D805D;
+    background-color: #fff;
+    color: #6D805D;
+  }
+  
+  .login-page .signup-btn {
+    min-height: 25%;
+    width: 28%;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .login-page .login-wrapper .signup-btn:hover {
+    border: 1px solid #6D805D;
+    background-color: #fff;
+    color: #6D805D;
+  }
+  
+  .login-page .signup-btn-fa {
+    min-height: 25%;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .login-page .login-wrapper .signup-btn:hover {
+    border: 1px solid #6D805D;
+    background-color: #fff;
+    color: #6D805D;
+  }
+  
+  .login-page .justify {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .form-group {
+    margin-bottom: 10px; /* Menambahkan margin bawah untuk memberikan jarak */
+  }
+  
+  .text-footer {
+    font-size: 12px; /* Menyesuaikan ukuran font */
+    color: #666; /* Warna teks abu-abu */
+    text-align: left; /* Mengatur teks agar berada di tengah */
+    margin-top: 2px;
+    margin-left: 10px; /* Memberikan jarak atas */
+    line-height: 1.5; /* Menambah ketinggian baris untuk keterbacaan */
+    width: 345px;
+  }
+  
+  
+  .container {
+    position: relative;
+    height: 2px; /* Contoh tinggi untuk menampilkan elemen di dalam container */
+  }
+  
+  .back-link-pw {
+    position: absolute; /* Menempatkan elemen secara absolut */
+    top: -425px; /* Jarak dari atas */
+    left: -30%; /* Posisi di tengah secara horizontal */
+    transform: translateX(-50%); /* Menggeser elemen ke kiri sebesar setengah lebar elemen */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+  }
+  
+  .back-image {
+    width: 50px; /* Sesuaikan ukuran gambar */
+    height: auto; /* Pertahankan aspek rasio gambar */
+  }
+  

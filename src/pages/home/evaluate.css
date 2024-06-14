@@ -1,0 +1,581 @@
+html, body {
+    overflow-x: hidden; /* Mencegah overflow horizontal pada halaman */
+    margin: 0;          /* Menghilangkan margin default pada body */
+    padding: 0;         /* Menghilangkan padding default pada body */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #D2D5C5;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Pastikan elemen ini tidak melebihi lebar viewport */
+}
+
+.div-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px 80px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #505050;
+    box-sizing: border-box; /* Pastikan padding termasuk dalam lebar total elemen */
+}
+
+@media (max-width: 991px) {
+    .div-2 {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+}
+
+.img {
+    width: 110px;
+    max-width: 100%;
+    align-self: stretch;
+    aspect-ratio: 1.82;
+    object-fit: auto;
+    object-position: center;
+}
+
+.div-3 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-self: stretch;
+    margin: auto 0;
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .div-3 {
+        flex-wrap: wrap;
+    }
+}
+
+.div-4, .div-6, .div-7, .div-9, .div-10 {
+    font-family: Poppins, sans-serif;
+}
+
+.div-5 {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #99a285;
+    text-decoration-line: underline;
+}
+
+.div-8 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .div-8 {
+        white-space: initial;
+    }
+}
+
+.img-2 {
+    width: 12px;
+    margin: auto 0;
+    aspect-ratio: 2;
+    object-fit: auto;
+    object-position: center;
+    fill: #505050;
+}
+
+.img-3 {
+    width: 40px;
+    align-self: stretch;
+    margin: auto 0;
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+}
+
+.div-11 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 932px;
+    width: 100%;
+    padding: 70px 20px;
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+    .div-11 {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+}
+
+.img-4 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -54px;
+    margin-left: -6px;
+    transform: translateX(10px); /* Geser ke kanan sedikit */
+}
+
+.img-4-rest {
+    position: absolute;
+    inset: 0;
+    width: 105%; /* Mengatur lebar gambar menjadi 50% dari kontainernya */
+    height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+    object-fit: cover;
+    object-position: center;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -300px;
+    transform: translateX(10px); /* Geser ke kanan sedikit */
+    /* max-width: 3000px; Membatasi lebar maksimum gambar hingga 300 piksel */
+}
+
+.img-4-work {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: -80px;
+  margin-left: -6px;
+  transform: translateX(10px); /* Geser ke kanan sedikit */
+}
+
+.img-4-self {
+  position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 3px;
+    margin-left: -6px;
+    transform: translateX(10px); /* Geser ke kanan sedikit */
+}
+
+.div-12 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    width: 100%;             /* Ensure full width */
+    gap: 20px;
+    position: relative;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .div-12 {
+        flex-wrap: wrap;
+        white-space: initial;
+    }
+}
+.div-13 {
+    display: flex;
+    gap: 15px;
+    padding: 8px 15px;
+    background-color: var(--C5, #6d805d);
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fafafa;
+    align-self: start;
+}
+
+@media (max-width: 991px) {
+    .div-13 {
+        white-space: initial;
+    }
+}
+
+.img-5 {
+    width: 8px;
+    margin: auto 0;
+    aspect-ratio: 0.47;
+    object-fit: auto;
+    object-position: center;
+    fill: #202020;
+    stroke-width: 3px;
+    stroke: #fafafa;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(250, 250, 250, 1);
+}
+
+.div-14 {
+    font-family: Inter, sans-serif;
+}
+
+.back-button {
+    background-color: 6D805D; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none; /* Hilangkan border */
+    padding: 5px 10px; /* Padding tombol */
+    cursor: pointer; /* Ubah kursor saat diarahkan ke tombol */
+    font-size: 20px; /* Ukuran teks */
+    border-radius: 5px; /* Agar tombol terlihat lebih lembut */
+  }
+
+  
+
+.div-15 {
+    text-align: center;
+    letter-spacing: -1.4px;
+    color: #505050;
+    font: 700 70px/150% Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    margin: 0;               /* Remove margins */
+    flex: 1;                 /* Allow it to grow and center */
+    margin-left: -50px;      /* Geser ke kiri sedikit */
+    max-width: 100%;
+}
+
+.div-15-wrk {
+  text-align: center;
+  letter-spacing: -1.4px;
+  color: #505050;
+  font: 700 70px/150% Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: -17px;               /* Remove margins */
+  flex: 1;                 /* Allow it to grow and center */
+  margin-left: -50px;      /* Geser ke kiri sedikit */
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .div-15 {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+}
+
+.div-16 {
+    display: flex;
+    align-self: end;
+    width: 852px;
+    margin: 891px 34px 99px 0;
+    position: relative;
+    text-align: right;
+    color: #4c4c4c;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: -0.64px;
+    font: 500 32px/48px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+.div-16-rest {
+    display: flex;
+    align-self: end;
+    width: 852px;
+    margin: 391px 34px 99px 0;
+    position: relative;
+    text-align: right;
+    color: #4c4c4c;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: -0.64px;
+    font: 500 32px/48px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+.div-16-self {
+  display: flex;
+    align-self: end;
+    width: 852px;
+    margin-top: 600px;
+    position: relative;
+    text-align: right;
+    color: #4c4c4c;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: -0.64px;
+    font: 500 32px/48px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+.img-self{
+  margin-bottom: 40px;
+}
+
+
+.div-16-workout {
+    display: flex;
+    align-self: end;
+    width: 852px;
+    margin: 990px 34px 99px 0;
+    position: relative;
+    text-align: right;
+    color: #4c4c4c;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: -0.64px;
+    font: 500 32px/48px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .div-16 {
+        max-width: 100%;
+        margin: 40px 10px 0 0;
+    }
+}
+
+
+/* artikel baru */
+.articles-section {
+    align-self: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1533px;
+    justify-content: center;
+  }
+
+  .articles-section-work {
+    align-self: center;
+    margin-top: 2px;
+    width: 100%;
+    max-width: 1533px;
+    justify-content: center;
+  }
+
+  .articles-section-rest {
+    align-self: center;
+    margin-top: -130px;
+    width: 100%;
+    max-width: 1533px;
+    justify-content: center;
+  }
+
+  .articles-section-self {
+    align-self: center;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1533px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 991px) {
+    .articles-section {
+      margin-top: 40px;
+    }
+  }
+  
+  .articles {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 991px) {
+    .articles {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
+  .article-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .article-column.wide {
+    max-width: 41%;
+  }
+  
+  .article-column.narrow {
+    max-width: 59%;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .article-column {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .article-column.wide,
+    .article-column.narrow {
+      max-width: 100%;
+    }
+  }
+  
+  .article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Specific styles for article images section */
+  .article-images img {
+    width: 90%;
+    max-width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 40px;
+  }
+  
+  .article-images img + img {
+    margin-top: 40px;
+  }
+  
+  /* General article content styles */
+  .article-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #4c4c4c;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    line-height: 150%;
+  }
+  
+  .article-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+    margin-top: 80px;
+  }
+  
+  .article-title img {
+    width: 80px;
+    aspect-ratio: 2.86;
+    object-fit: auto;
+    object-position: center;
+    margin-left: auto;
+    margin-top: -100px;
+  }
+  
+  .article-text {
+    color: #515151;
+    letter-spacing: -0.48px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: -20px;
+  }
+  
+  .article-date,
+  .article-author {
+    font-family: Plus Jakarta Sans, sans-serif;
+  }
+  
+  .article-author {
+    margin-left: 500px;
+  }
+  
+  @media (max-width: 991px) {
+    .article-author {
+      margin-left: 0;
+    }
+  }
+  
+
+/* batass */
+
+
+
+
+/* batas */
+.vission-footer {
+    background-color: #6D805D;
+    border-radius: 30px;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 120px;
+    min-height: 10vh;
+    padding: 2%;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-body {
+    background-color: #BEC9AB;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: 5%;
+    width: 200px;
+    min-height: 30vh;
+    padding: 18% 8% 8% 8%;
+    text-align: justify;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-footer {
+        background-color: #6D805D;
+        border-radius: 30px;
+        margin-bottom: 1%;
+        margin-top: 10px;
+        margin-left: 20%;
+        width: 120px;
+        min-height: 10vh;
+        padding: 2%;
+        text-align: center;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}.vission-footer {
+    background-color: #6D805D;
+    border-radius: 30px;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 120px;
+    min-height: 10vh;
+    padding: 2%;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-body {
+    background-color: #BEC9AB;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: 5%;
+    width: 200px;
+    min-height: 30vh;
+    padding: 18% 8% 8% 8%;
+    text-align: justify;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-footer {
+        background-color: #6D805D;
+        border-radius: 30px;
+        margin-bottom: 1%;
+        margin-top: 10px;
+        margin-left: 20%;
+        width: 120px;
+        min-height: 10vh;
+        padding: 2%;
+        text-align: center;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}

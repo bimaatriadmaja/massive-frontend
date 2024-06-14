@@ -1,0 +1,42 @@
+.vission-footer {
+    background-color: #6D805D;
+    border-radius: 30px;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 120px;
+    min-height: 10vh;
+    padding: 2%;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-body {
+    background-color: #BEC9AB;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: 5%;
+    width: 200px;
+    min-height: 30vh;
+    padding: 18% 8% 8% 8%;
+    text-align: justify;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission-footer {
+        background-color: #6D805D;
+        border-radius: 30px;
+        margin-bottom: 1%;
+        margin-top: 10px;
+        margin-left: 20%;
+        width: 120px;
+        min-height: 10vh;
+        padding: 2%;
+        text-align: center;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}

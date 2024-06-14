@@ -1,0 +1,563 @@
+.admin-container {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-div {
+  background-color: #fafafa;
+}
+
+.admin-div-2 {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .admin-div-2 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+
+.admin-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 18%;
+  margin-left: 0px;
+}
+
+@media (max-width: 991px) {
+  .admin-column {
+    width: 100%;
+  }
+}
+
+.admin-div-3 {
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: var(--C6, #696c61);
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: start;
+  font-size: 16px;
+  color: #fafafa;
+  font-weight: 500;
+  white-space: nowrap;
+  text-transform: capitalize;
+  letter-spacing: 1.6px;
+  margin: 0 auto;
+  padding: 20px 20px 260px;
+}
+
+@media (max-width: 991px) {
+  .admin-div-3 {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+
+.admin-img {
+  aspect-ratio: 1.79;
+  object-fit: auto;
+  object-position: center;
+  width: 108px;
+  max-width: 100%;
+}
+
+.admin-div-4 {
+  display: flex;
+  margin-top: 90px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .admin-div-4 {
+    margin-top: 40px;
+    white-space: initial;
+  }
+}
+
+.admin-img-2 {
+  aspect-ratio: 0.79;
+  object-fit: auto;
+  object-position: center;
+  width: 22px;
+}
+
+.admin-div-5 {
+  font-family: Poppins, sans-serif;
+  margin: auto 0;
+  color: #fafafa;
+}
+
+.admin-div-6 {
+  display: flex;
+  margin-top: 60px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .admin-div-6 {
+    margin-top: 40px;
+    white-space: initial;
+  }
+}
+
+.admin-img-3 {
+  aspect-ratio: 0.95;
+  object-fit: auto;
+  object-position: center;
+  width: 22px;
+  align-self: start;
+}
+
+.admin-div-7 {
+  font-family: Poppins, sans-serif;
+  color: #fafafa;
+}
+
+.admin-div-8 {
+  display: flex;
+  margin-top: 59px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .admin-div-8 {
+    margin-top: 40px;
+    white-space: initial;
+  }
+}
+
+.admin-img-4 {
+  aspect-ratio: 1.1;
+  object-fit: auto;
+  object-position: center;
+  width: 22px;
+  fill: #fafafa;
+  stroke-width: 1px;
+  stroke: #fafafa;
+  border-color: rgba(250, 250, 250, 1);
+  border-style: solid;
+  border-width: 1px;
+  margin: auto 0;
+}
+
+.admin-div-9 {
+  font-family: Poppins, sans-serif;
+  color: #fafafa;
+}
+
+.admin-table-container {
+  flex: 1;
+}
+
+.admin-table-container-user {
+  flex: 1;
+  width: 10px;
+}
+
+.admin-column-user {
+  width: 200px;
+}
+
+@media (max-width: 991px) {
+  .admin-column-user {
+    width: 100%;
+  }
+}
+
+.admin-div-10 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    text-align: center; /* Center the text */
+    background-color: white; /* Set background color to white */
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); /* Add black shadow below */
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #696c61; /* Add border to all sides */
+    background-color: #d2d5c5;
+  }
+  
+  .admin-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .admin-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .admin-table tbody tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .admin-table-actions {
+    display: flex;
+    gap: 5px;
+    align-items: center; /* Align buttons vertically */
+  }
+  
+  .admin-table-actions button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    min-width: 80px; /* Set minimum width for buttons */
+  }
+  
+  .admin-table-actions button:hover {
+    opacity: 0.7;
+  }
+  
+  .admin-table-actions .admin-button-edit {
+    background-color: #2196f3; /* Blue color for Edit button */
+    color: white;
+  }
+  
+  .admin-table-actions .admin-button-delete {
+    background-color: #f44336; /* Red color for Delete button */
+    color: white;
+  }
+  
+  .admin-button-addnew {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    min-width: 80px; 
+    background-color: #696c61; /* Red color for Delete button */
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .admin-table{
+    margin-left: -10px;
+  }
+
+
+  /* ADD USER */
+  .add-columns {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .add-column {
+    width: 50%;
+  }
+  
+  .add-form {
+    margin-top: 5rem;
+  }
+  
+  .add-label {
+    font-weight: bold;
+  }
+  
+  .add-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+  }
+  
+  .add-button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #696c61;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-button:focus {
+    outline: none;
+  }
+  
+  .add-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* EDIT USER */
+.edit-users{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+  .edit-columns {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .edit-column {
+    width: 50%;
+  }
+  
+  .edit-form {
+    margin-top: 5rem;
+  }
+  
+  .edit-label {
+    font-weight: bold;
+  }
+  
+  .edit-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+  }
+  
+  .edit-button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #696c61;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .edit-button:focus {
+    outline: none;
+  }
+  
+  .edit-button:active {
+    transform: translateY(1px);
+  }
+  
+
+  
+  .admin-table-actions-feed button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    min-width: 80px; /* Set minimum width for buttons */
+  }
+  
+  .admin-table-actions-feed button:hover {
+    opacity: 0.7;
+  }
+  
+  .admin-table-actions-feed .admin-button-edit-feed {
+    background-color: #2196f3; /* Blue color for Edit button */
+    color: white;
+  }
+  
+  .admin-table-actions-feed .admin-button-delete-feed {
+    background-color: #f44336; /* Red color for Delete button */
+    color: white;
+  }
+
+/* EDIT */
+.edit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #d2d5c5;
+}
+
+.edit-form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form-group {
+  margin-bottom: 15px;
+}
+
+.edit-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.edit-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.edit-file-input {
+  display: flex;
+  align-items: center;
+}
+
+.edit-file-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.edit-file-text {
+  margin-left: 10px;
+}
+
+.edit-figure {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.edit-preview-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-button {
+  padding: 10px 20px;
+  background-color: #696c61;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-button:hover {
+  background-color: #d2d5c5;
+}
+
+
+/* ADD FEED */
+.addfeed-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.addfeed-form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.addfeed-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.addfeed-form-group {
+  margin-bottom: 15px;
+}
+
+.addfeed-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.addfeed-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.addfeed-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.addfeed-file-input {
+  display: flex;
+  align-items: center;
+}
+
+.addfeed-file-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.addfeed-file-text {
+  margin-left: 10px;
+}
+
+.addfeed-figure {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.addfeed-preview-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addfeed-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.addfeed-button {
+  padding: 10px 20px;
+  background-color: #696c61;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.addfeed-button:hover {
+  background-color: #d2d5c5;
+}

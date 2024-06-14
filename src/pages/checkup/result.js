@@ -1,0 +1,105 @@
+import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import "./result.css";
+
+function Result() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { bmi, klasifikasi, warnaKlasifikasi } = location.state;
+
+   // Fungsi untuk mengembalikan warna latar belakang sesuai dengan klasifikasi BMI
+   const getBackgroundColor = () => {
+    switch (klasifikasi) {
+      case 'Underweight':
+        return '#81B1F1';
+      case 'Normal':
+        return '#90CF46';
+      case 'Overweight':
+        return '#F1DF3E';
+      case 'Obesity':
+        return '#DF4141';
+      default:
+        return 'transparent';
+    }
+  };
+
+  return (
+    <div className="Result">
+      <section className="result-container">
+      <section className="result-content-wrapper">
+        <nav className="result-navigation-bar">
+        <Link to="/bmi">
+          
+          <span className="result-back-text">Back</span>
+          </Link>
+        </nav>
+        <h1 className="result-bmi-result-title">Your BMI Result</h1>
+        <br/>
+        <div className="result-bmi-result-container">
+          <div style={{ backgroundColor: getBackgroundColor(), padding: '10px', display: 'inline-block', borderRadius: '74px' }}>
+        <h3>{bmi} ({klasifikasi})</h3>
+      </div>
+        </div>
+        <section className="result-metrics-wrapper">
+          <div className="result-metrics-dots-wrapper">
+            <div className="result-dot result-dot-blue"></div>
+            <div className="result-dot result-dot-green"></div>
+            <div className="result-dot result-dot-yellow"></div>
+            <div className="result-dot result-dot-red"></div>
+          </div>
+          <div className="result-metrics-content">
+            <div className="result-metrics-columns">
+              <div className="result-column-left">
+                <div className="result-metrics-details">
+                  <div className="result-metrics-info">
+                    <div className="result-metrics-info-left">
+                      <div className="result-metrics-values">
+                        <h3>BMI</h3>
+                        <p className='result-title'><b>BMI</b></p>
+                        <p className="result-first">Under 18,5</p>
+                        <p>18,5 - 24,9</p>
+                        <p>25 - 29,9</p>
+                        <p className="result-last-p">Over 30</p>
+                      </div>
+                    </div>
+                    <div className="result-metrics-info-right">
+                      <div className="result-metrics-classification">
+                        <h3>Classification</h3>
+                        <p className='result-title'><b>Classification</b></p>
+                        <p className="result-first">Underweight</p>
+                        <p>Normal</p>
+                        <p>Overweight</p>
+                        <p className="result-last-p">Obesity</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="result-column-image">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/c27af5cc44184427c3bf9e57bd2f86eb33ac3e3477693b00e96cf793c81aa22e?apiKey=828441a8e65f4aacaee2ce94caf37306&"
+                  alt="BMI Chart"
+                  className="result-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+      
+      <article>
+        <h2 className="bmi-bmi-title-result">Body Mass Index</h2>
+        <p className="bmi-description-result">
+          Body Mass Index is a method used to evaluate a person's weight status based on their height and weight.
+          This is a simple measurement often used by medical professionals to classify a person as underweight,
+          normal, overweight, or obese.
+        </p>
+      </article>
+    </div>
+  );
+}
+
+export default Result;
