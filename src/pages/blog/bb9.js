@@ -104,7 +104,7 @@ Additionally, swimming is an effective way to burn calories and maintain a healt
                     />
                   </Link>
                 </div>
-                <div className="column-3">
+                <div className="column-2">
                 <Link to='/bb11'>
                   <img
                     loading="lazy"

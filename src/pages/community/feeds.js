@@ -12,30 +12,33 @@ import { Link } from 'react-router-dom';
 const Feeds = () => {
   return (
     <div className="Container">
-
-      <section className="ProfileSection">
-        <img className="ProfileImage" src={profileImage} alt="Profile" />
-        <h2 className="ProfileName">Wavi Krisdiar Hidayat</h2>
-        <p className="Location">Jakarta</p>
-      </section>
-      <section className="ImagesSection">
-        <div className="ImageWrapper">
-          <img className="Image" src={image1} alt="Image 1" />
-        </div>
-        <div className="ImageWrapper">
-          <img className="Image" src={image2} alt="Image 2" />
-        </div>
-        <div className="ImageWrapper">
-          <img className="Image" src={image3} alt="Image 3" />
-        </div>
-        <div className="ImageWrapper">
-         <img className="Image" src={image4} alt="Image 4" />
-        </div>
-        <div>
-        <Link to='/formaddfeed'><img style={{width:'825px', marginLeft:'5px'}} src={image5}/></Link> 
-        </div>
-      </section>
+  <section className="ProfileSection" data-aos="fade-down">
+    <img className="ProfileImage" src={profileImage} alt="Profile" />
+    <h2 className="ProfileName">Bima Triadmaja</h2>
+    <p className="Location">Klaten, Jawa Tengah</p>
+  </section>
+  
+  <section className="ImagesSection">
+    <div className="ImageWrapper" data-aos="fade-up" data-aos-delay="100">
+      <img className="Image" src={image1} alt="Image 1" />
     </div>
+    <div className="ImageWrapper" data-aos="fade-up" data-aos-delay="200">
+      <img className="Image" src={image2} alt="Image 2" />
+    </div>
+    <div className="ImageWrapper" data-aos="fade-up" data-aos-delay="300">
+      <img className="Image" src={image3} alt="Image 3" />
+    </div>
+    <div className="ImageWrapper" data-aos="fade-up" data-aos-delay="400">
+      <img className="Image" src={image4} alt="Image 4" />
+    </div>
+    <div data-aos="fade-up" data-aos-delay="500">
+      <Link to='/formaddfeed'>
+        <img style={{ width: '825px', marginLeft: '5px' }} src={image5} alt="Image 5"/>
+      </Link>
+    </div>
+  </section>
+</div>
+
   );
 };
 

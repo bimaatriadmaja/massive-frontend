@@ -8,18 +8,22 @@ function Trend() {
   return (
     <section class="custom-content-section">
       <article class="custom-content-container">
-        <div class="custom-content-row">
+        <div class="custom-content-row animate__animated animate__fadeInDown">
           <div class="custom-text-column">
             <div class="custom-text-content">
-              <h2 class="custom-title">
+              <h2 class="custom-title animate__animated animate__fadeInDown animate__delay-1s">
                 Why Berries Improve Your Heart Health?
               </h2>
-              <p class="custom-description">
+              <p class="custom-description animate__animated animate__fadeInDown animate__delay-2s">
                 Berries are a good source of polyphenols, especially
                 anthocyanins, micronutrients, and fiber. In epidemiological and
                 clinical studies, these constituents have ...
               </p>
-              <a href="/trend1" class="custom-read-more-btn" tabindex="0">
+              <a
+                href="/trend1"
+                class="custom-read-more-btn animate__animated animate__fadeInDown animate__delay-3s"
+                tabindex="0"
+              >
                 READ MORE
               </a>
             </div>
@@ -35,8 +39,8 @@ function Trend() {
         </div>
       </article>
       <article class="custom-content-container">
-        <div class="custom-content-row-2">
-          <div class="custom-image-column-2">
+        <div class="custom-content-row-2" data-aos="fade-up">
+          <div class="custom-image-column-2" data-aos="zoom-in">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/97dbec26b86c1cc7237dfcedef91fd0db4057a78a9bc64a308ee8e64d38f22fe?apiKey=828441a8e65f4aacaee2ce94caf37306&"
@@ -44,7 +48,7 @@ function Trend() {
               class="custom-image"
             />
           </div>
-          <div class="custom-text-column">
+          <div class="custom-text-column" data-aos="fade-left">
             <div class="custom-text-column-2">
               <h2 class="custom-title-2">Give A Drink To Your Skin!</h2>
               <p class="custom-description-2">
@@ -59,8 +63,13 @@ function Trend() {
             </div>
           </div>
         </div>
-        <div class="gallery-image-row">
-          <div class="gallery-image-column">
+
+        <div class="gallery-image-row" data-aos="fade-up">
+          <div
+            class="gallery-image-column"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             <Link to="/milk">
               <img
                 loading="lazy"
@@ -70,7 +79,11 @@ function Trend() {
               />
             </Link>
           </div>
-          <div class="gallery-image-column">
+          <div
+            class="gallery-image-column"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <Link to="/mat">
               <img
                 loading="lazy"
@@ -80,7 +93,11 @@ function Trend() {
               />
             </Link>
           </div>
-          <div class="gallery-image-column">
+          <div
+            class="gallery-image-column"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
             <Link to="/bread">
               <img
                 loading="lazy"
@@ -90,7 +107,11 @@ function Trend() {
               />
             </Link>
           </div>
-          <div class="gallery-image-column">
+          <div
+            class="gallery-image-column"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             <Link to="/scrub">
               <img
                 loading="lazy"
@@ -101,6 +122,7 @@ function Trend() {
             </Link>
           </div>
         </div>
+
         <article class="peach-article-container">
           <img
             loading="lazy"
@@ -121,11 +143,10 @@ function Trend() {
             </button>
           </Link>
         </article>
-        <section class="content-columns">
-          <div class="content-column">
+        <section class="content-columns" data-aos="fade-up">
+          <div class="content-column" data-aos="zoom-in" data-aos-delay="100">
             <div class="content-group">
               <Link to="/trend4">
-                {" "}
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/5f8cc0cbde0f60dbe4903f9df530f70a9be6893968476803b1928205b577c756?apiKey=828441a8e65f4aacaee2ce94caf37306&"
@@ -143,7 +164,7 @@ function Trend() {
               </Link>
             </div>
           </div>
-          <div class="content-column">
+          <div class="content-column" data-aos="zoom-in" data-aos-delay="200">
             <div class="content-group">
               <Link to="/trend6">
                 <img
@@ -163,7 +184,7 @@ function Trend() {
               </Link>
             </div>
           </div>
-          <div class="content-column">
+          <div class="content-column" data-aos="zoom-in" data-aos-delay="300">
             <div class="content-group">
               <Link to="/trend8">
                 <img
@@ -184,7 +205,8 @@ function Trend() {
             </div>
           </div>
         </section>
-        <section class="trend-image-text-section">
+
+        <section class="trend-image-text-section" data-aos="zoom-in">
           <article class="trend-image-text-wrapper">
             <div class="trend-image-column">
               <img
@@ -212,7 +234,7 @@ function Trend() {
           </article>
         </section>
 
-        <section class="trend-content-section">
+        <section class="trend-content-section" data-aos="zoom-in">
           <article class="trend-content-wrapper">
             <div class="trend-text-column">
               <div class="trend-content-box">

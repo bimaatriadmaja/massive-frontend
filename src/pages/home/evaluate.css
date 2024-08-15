@@ -228,14 +228,18 @@ html, body {
 }
 
 .back-button {
-    background-color: 6D805D; /* Warna latar belakang */
-    color: white; /* Warna teks */
-    border: none; /* Hilangkan border */
-    padding: 5px 10px; /* Padding tombol */
-    cursor: pointer; /* Ubah kursor saat diarahkan ke tombol */
-    font-size: 20px; /* Ukuran teks */
-    border-radius: 5px; /* Agar tombol terlihat lebih lembut */
-  }
+  background-color: #6D805D; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  border: none; /* Hilangkan border */
+  padding: 0px 20px; /* Padding tombol */
+  cursor: pointer; /* Ubah cursor saat diarahkan ke tombol */
+  font-size: 100px; /* Ukuran teks yang lebih standar */
+  border-radius: 5px; /* Radius border */
+  text-align: center; /* Agar teks berada di tengah */
+  display: inline-block; /* Agar tombol berbentuk blok inline */
+  text-decoration: none; /* Menghilangkan garis bawah pada teks link (jika tombol adalah link) */
+}
+
 
   
 

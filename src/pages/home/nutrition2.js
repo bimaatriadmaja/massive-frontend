@@ -127,7 +127,7 @@ function Nutrition2() {
                     />
                   </Link>
                 </div>
-                <div className="column-3">
+                <div className="column-2">
                 <Link to='/ba111'>
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1a24f10a37924a5ec8ea15c41ab2aa33b0fd5b876e045619a7c220a0b5242d0?apiKey=828441a8e65f4aacaee2ce94caf37306&"

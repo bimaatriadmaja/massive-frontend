@@ -54,44 +54,44 @@ function Account() {
             src={prof} style={{width:"70%",}}
           /> */}
         </div>
-        <div className="nama-prof">WAVI KRISDIAR HIDAYAT</div>
+        <div className="nama-prof">Bima Triadmaja</div>
         <div className="loc">
-          <div className="jakarta"><i className="fa-solid fa-location-dot fa-xs" style={{color: "#000", marginRight:"2px"}}></i>Jakarta</div>
-          <div className="join"><i className="fa-solid fa-calendar-days" style={{color: "#000000", marginRight:"2px"}}></i>joined Desember 2023</div>
+          <div className="jakarta"><i className="fa-solid fa-location-dot fa-xs" style={{color: "#000", marginRight:"2px"}}></i>Klaten, Jawa Tengah</div>
+          <div className="join"><i className="fa-solid fa-calendar-days" style={{color: "#000000", marginRight:"2px"}}></i>joined Mei 2024</div>
         </div>
         <div className="biodata">
           <div className="biodata-2">
             <div className="nama">
               <div className="nama-1">Name</div>
               <div className="nama-2">
-                WAVI KRISDIAR HIDAYAT
+                Bima Triadmaja
                 <br/>
               </div>
             </div>
             <div className="number">
               <div className="number-1">Phone Number</div>
-              <div className="number-2">08123456789</div>
+              <div className="number-2">0895422615117</div>
             </div>
             <div className="bio">
               <div className="bio-1">Bio</div>
-              <div className="bio-2">-</div>
+              <div className="bio-2">Hidup untuk beribadah kepada Allah</div>
             </div>
           </div>
           <div className="biodata-3">
             <div className="username">
               <div className="username-1">Username</div>
-              <div className="username-2">wavi</div>
+              <div className="username-2">bimaatriadmaja_</div>
             </div>
             <div className="email">
               <div className="email-1">Email</div>
               <div className="email-2">
-                wavikrisdiarh@gmail.com
+                bimatriadmaja@gmail.com
                 <br />
               </div>
             </div>
             <div className="birth">
               <div className="birth-1">Date of Birth</div>
-              <div className="birth-2">17 April 2003</div>
+              <div className="birth-2">17 Juni 2003</div>
             </div>
           </div>
         </div>

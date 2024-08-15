@@ -19,13 +19,13 @@ function Evaluate() {
           alt="Evaluate"
         />
         <div className="div-12">
-          <div className="div-13">
-            <img
+        <div className="div-13">
+            {/* <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9a376e859a14d72cdebc3c2996315fe3363cdccb8f49d1f5f1026989f44b161?"
               className="img-5"
               alt="Back"
-            />
+            /> */}
             <Link to="../" className="back-button">
               Back
             </Link>

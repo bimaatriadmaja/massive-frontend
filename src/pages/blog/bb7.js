@@ -106,7 +106,7 @@ function BB7() {
                     />
                   </Link>
                 </div>
-                <div className="column-3">
+                <div className="column-2">
                 <Link to='/bb4'>
                   <img
                     loading="lazy"

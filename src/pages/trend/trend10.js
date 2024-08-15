@@ -133,7 +133,7 @@ function Trend10() {
                     />
                   </Link>
                 </div>
-                <div className="column-3">
+                <div className="column-2">
                 <Link to='/bb11'>
                   <img
                     loading="lazy"

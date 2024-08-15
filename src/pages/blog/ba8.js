@@ -121,7 +121,7 @@ Sunbathing can promote vasodilation, or the widening of blood vessels, which can
                       />
                       </Link>
                     </div>
-                    <div className="column-3">
+                    <div className="column-2">
                     <Link to='/ba11'>
                       <img
                         loading="lazy"

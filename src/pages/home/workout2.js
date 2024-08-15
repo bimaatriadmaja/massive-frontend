@@ -9,14 +9,17 @@ function Workout2() {
       <main id="content">
         <section class="berry-page-container">
           <div class="berry-content-section">
-          <div className="isi-2" style={{marginTop:'20px', marginLeft:'-10px'}}>
-                <button className="button-back" data-el="button-1" >
-                  <div _text=""></div>
-                </button>
-                <Link className="isi-3" to="/workout">
-                  Back
-                </Link>
-              </div>
+          <div className="div-13">
+            {/* <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9a376e859a14d72cdebc3c2996315fe3363cdccb8f49d1f5f1026989f44b161?"
+              className="img-5"
+              alt="Back"
+            /> */}
+            <Link to="../" className="back-button">
+              Back
+            </Link>
+          </div>
             <h1 class="berry-title">
             Helping Height Growth Through Basketball
             </h1>
@@ -100,7 +103,7 @@ function Workout2() {
                     />
                   </Link>
                 </div>
-                <div className="column-3">
+                <div className="column-2">
                 <Link to='/bb4'>
                   <img
                     loading="lazy"

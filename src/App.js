@@ -4,6 +4,10 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes,  } from "react-router-dom";
 import "./style.css";
 import "./App.css";
+import "animate.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ScrollToTop from './components/ScrollToTop.js';
 import Home from "./pages/home/home";
 import AboutUs from "./pages/aboutus/aboutus"; 
 import SignIn from "./pages/SignIn";
@@ -101,11 +105,13 @@ import Feeds from "./pages/community/feeds";
 import Ticket from "./pages/community/ticket";
 import FormAddFeed from "./pages/community/formaddfeed";
 
+AOS.init();
+
 function App() {
   return (
     <Router>
       <Navbar />
-      
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Navbar" element={<Navbar />} />

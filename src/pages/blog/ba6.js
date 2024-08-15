@@ -117,7 +117,7 @@ Spinach is also a good source of a number of B vitamins, including vitamin B2 (r
                   />
                   </Link>
                 </div>
-                <div className="column-3">
+                <div className="column-2">
                 <Link to='/ba4'>
                   <img
                     loading="lazy"

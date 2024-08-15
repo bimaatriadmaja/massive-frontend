@@ -123,7 +123,7 @@ Anti-inflammatory foods are those that contain compounds known to reduce inflamm
                       />
                       </Link>
                     </div>
-                    <div className="column-3">
+                    <div className="column-2">
                     <Link to='/ba4'>
                       <img
                         loading="lazy"

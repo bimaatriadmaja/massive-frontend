@@ -2460,6 +2460,7 @@ div.absolute {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 5%;
 }
 .card-footer-text{
     width: 500px;
@@ -2507,6 +2508,7 @@ div.absolute {
 .logo-about{
     width: 70%;
     max-height: 300px;
+    margin-top: -80px;
 }
 .menu-about{
     width: 50%;
@@ -2534,6 +2536,9 @@ div.absolute-about {
     border-radius: 30px;
     background-color:#635955;
 }
+
+
+
 .card-header-vission {
     background-color: #BEC9AB;
     border-radius: 0px 0px 30px 30px;

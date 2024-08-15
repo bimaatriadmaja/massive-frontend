@@ -105,7 +105,7 @@ Consulting with a trainer or instructor at the gym is a wise step to help design
                     />
                   </Link>
                 </div>
-                <div className="column-3">
+                <div className="column-2">
                 <Link to='/bb4'>
                   <img
                     loading="lazy"

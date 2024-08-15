@@ -86,7 +86,7 @@ Running in the morning is not only about burning calories or improving physical 
                       />
                       </Link>
                     </div>
-                    <div className="column-3">
+                    <div className="column-2">
                     <Link to="/bb11">
                       <img
                         loading="lazy"

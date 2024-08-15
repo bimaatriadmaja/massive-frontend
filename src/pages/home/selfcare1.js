@@ -109,7 +109,7 @@ function Selfcare1() {
                     alt="Berries"
                   /></Link>
                 </div>
-                <div className="column-3">
+                <div className="column-2">
                 <Link to='/ba11'>
                   <img
                     loading="lazy"

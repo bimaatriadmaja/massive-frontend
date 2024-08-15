@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import App from './App';
+import "animate.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // import 'bulma/css/bulma.css';
 
 ReactDOM.render(
